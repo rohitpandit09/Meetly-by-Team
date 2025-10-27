@@ -257,7 +257,7 @@
         const email = document.getElementById('signup-email').value;
         const password = document.getElementById('signup-password').value;
 
-        fetch('http://localhost:8080/api/auth/signup', {
+        fetch('https://meetly-by-team-production.up.railway.app', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ fullName, email, password })
@@ -293,7 +293,7 @@
         const email = document.getElementById('signin-email').value;
         const password = document.getElementById('signin-password').value;
 
-        fetch('http://localhost:8080/api/auth/signin', {
+        fetch('https://meetly-by-team-production.up.railway.app', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ email, password })
